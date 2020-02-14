@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de validación JS</title>
+    <!-- Icono que sale en la pestaña del navegador -->
+    <link rel="shortcut icon" type="assets/img" href="assets/img/form-icon.png">
+    <!-- CDN con las fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Kalam:400,700&display=swap" rel="stylesheet">
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <img src="assets/img/DL-logo.png" alt="Desafío-Latam-logo">
+    <h1>Formulario de Registro</h1>
+    <form class="form-register" onsubmit="return validar();"> <!-- El onsubmit da a entender que apretando el botón,
+      debe retornar la función (los datos agregados) -->
+
+    <!-- Contenedor del formulario -->
+      <div class="form-container">
+        <!-- Cada uno de los inputs contienen ID para agregar datos. Estos ID luego se llaman en el archivo JS que se enlaza
+        en la parte inferior, antes de la etiqueta de cierre </body> -->
+        <input type="text" id="name" name="nombre" placeholder="Nombre" class="inputcss">
+        <input type="text" id="surnames" name="apellidos" placeholder="Apellidos" class="inputcss">
+        <input type="email" id="mail" name="correo" placeholder="Correo" class="inputcss">
+        <input type="text" id="usser" name="usuario" placeholder="Usuario" class="inputcss">
+        <input type="password" id="pass" name="pass" placeholder="Contraseña" class="inputcss">
+        <input type="text" id="phone" name="telefono" placeholder="Teléfono (911111111)" class="inputcss">
+        <input type="submit" value="<Registrar>" class="btn-enviar">
+      </div>
+    </form>
+
+    <!-- Archivo JS. Se pone al final para evitar conflictos y los navegadores leen secuencialmente el código -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+  </body>
+</html>
